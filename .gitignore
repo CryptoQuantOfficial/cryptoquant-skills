@@ -1,0 +1,43 @@
+# Claude local settings
+.claude/
+CLAUDE.md
+
+# mcp local settings
+.mcp.json
+
+# test
+tests/
+
+# Internal documentation (not for public)
+internal_docs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# API Keys - NEVER commit these
+*.key
+*.pem
+secrets/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+.playwright-mcp/

@@ -1,0 +1,32 @@
+{
+  "name": "cryptoquant",
+  "version": "1.0.0",
+  "description": "CryptoQuant on-chain analytics for Claude - Bitcoin, Ethereum, exchange flows, market indicators",
+  "author": {
+    "name": "CryptoQuant"
+  },
+  "homepage": "https://github.com/CryptoQuantOfficial/cryptoquant-skills",
+  "repository": "https://github.com/CryptoQuantOfficial/cryptoquant-skills",
+  "license": "MIT",
+  "keywords": [
+    "cryptoquant",
+    "bitcoin",
+    "ethereum",
+    "on-chain",
+    "analytics",
+    "mvrv",
+    "exchange-flow",
+    "crypto"
+  ],
+  "agents": [
+    "./agents/market-analyst.md",
+    "./agents/whale-tracker.md"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "cryptoquant": {
+      "command": "npx",
+      "args": ["-y", "cryptoquant-mcp"]
+    }
+  }
+}

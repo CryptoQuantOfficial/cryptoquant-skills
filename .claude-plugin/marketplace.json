@@ -1,0 +1,24 @@
+{
+  "name": "cryptoquant-plugins",
+  "owner": {
+    "name": "CryptoQuant"
+  },
+  "support": "https://github.com/CryptoQuantOfficial/cryptoquant-skills/issues",
+  "metadata": {
+    "description": "CryptoQuant on-chain analytics plugins for Claude"
+  },
+  "plugins": [
+    {
+      "name": "cryptoquant",
+      "source": "./",
+      "description": "Bitcoin, Ethereum on-chain analytics - MVRV, SOPR, Exchange Flows, Derivatives data",
+      "version": "1.0.0",
+      "author": {
+        "name": "CryptoQuant"
+      },
+      "homepage": "https://cryptoquant.com",
+      "repository": "https://github.com/CryptoQuantOfficial/cryptoquant-skills",
+      "license": "MIT"
+    }
+  ]
+}
