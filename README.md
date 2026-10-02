@@ -1,5 +1,16 @@
 # CryptoQuant Plugin for Claude
 
+> [!WARNING]
+> **This plugin is deprecated and no longer maintained.** It keeps working for existing installs, but new features land in [CryptoQuantOfficial/cryptoquant-mcp](https://github.com/CryptoQuantOfficial/cryptoquant-mcp).
+>
+> **What to use instead**
+>
+> - **Remote MCP server (recommended):** connect your client to `https://mcp.cryptoquant.com/mcp` and sign in with your CryptoQuant account (OAuth). No API key in your config. [Setup guide](https://userguide.cryptoquant.com/api/mcp-server-beta/remote-mcp-recommended)
+> - **Local MCP server:** the `cryptoquant-mcp` npm package. Setup and requirements are in [CryptoQuantOfficial/cryptoquant-mcp](https://github.com/CryptoQuantOfficial/cryptoquant-mcp).
+> - **Cursor:** install the CryptoQuant plugin from [CryptoQuantOfficial/cryptoquant-mcp](https://github.com/CryptoQuantOfficial/cryptoquant-mcp). If you do, remove this plugin. Both are named `cryptoquant` and conflict when installed together.
+>
+> **If you keep using this plugin:** it runs `npx -y cryptoquant-mcp`, which always fetches the latest version. Starting with `cryptoquant-mcp` 1.0, the local server forwards to the remote server. Your API key keeps working if it is set in `CRYPTOQUANT_API_KEY` or was saved by `initialize` in `~/.cryptoquant/credentials`. The `initialize` and `reset_session` tools are removed, so the step in this plugin's skills that calls `initialize` fails once, and the other tools work as before. 1.0 also adds Research and QuickTake tools.
+
 <p align="center">
   <strong>On-Chain Analytics in Your AI Assistant</strong>
 </p>
